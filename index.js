@@ -7,7 +7,7 @@ app.use('/elevenlabs', createProxyMiddleware({
   changeOrigin: true,
   pathRewrite: { '^/elevenlabs': '' },
   onProxyRes: (proxyRes) => {
-    proxyRes.headers['Access-Control-Allow-Origin'] = '*';
+    proxyRes.headers['Access-Control-Allow-Origin'] = 'https://macthave.ru';
     proxyRes.headers['Access-Control-Allow-Methods'] = 'GET,POST,OPTIONS';
     proxyRes.headers['Access-Control-Allow-Headers'] = 'Content-Type,Authorization';
   }
